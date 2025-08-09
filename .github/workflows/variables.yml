@@ -1,0 +1,17 @@
+name: Variable Examples
+
+on: workflow_dispatch
+
+jobs:
+  variables-demo:
+    runs-on: ubuntu-latest
+    env:
+        MY_NAME: Shwetha
+    steps:
+      - name: Print with variable
+        run: echo "Hello, $MY_NAME"
+
+      - name: Multi-line script
+        run: |
+          echo "Step1"
+          echo "Step2"
